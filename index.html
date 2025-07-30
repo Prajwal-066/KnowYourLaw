@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LegalHelp - Find Your Legal Solution</title>
+    <title>KnowYourLaw</title>
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="navbar">
-        <!-- <ul>Home</ul> -->
-        <ul></ul>
-    </div>
+   <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="file.svg" width="25" height="30" alt="Logo">
+                    <span>KnowYourLaw</span>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <div class="container">
-        <div class="logo"><img src="file.svg" width="35", height="45">
+        <div class="logo">
             KnowYourLaw
-        
         </div>
         <div class="tagline">Get personalized legal guidance </div>
         
@@ -44,31 +60,14 @@
         </div> -->
 
         <div class="result-section" id="resultSection">
-            <div class="result-title">💡 Your Legal Guidance</div>
+            
             <div class="result-content" id="resultContent">
                 <!-- Results will be populated here -->
             </div>
         </div>
 
-        <!-- <div class="features">
-            <div class="feature">
-                <span class="feature-icon">⚡</span>
-                <div class="feature-text">Instant Analysis</div>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">🎯</span>
-                <div class="feature-text">Personalized Advice</div>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">🆓</span>
-                <div class="feature-text">Completely Free</div>
-            </div>
-        </div> -->
-
-        <!-- <div class="disclaimer">
-            <div class="disclaimer-text">
-                <strong>⚠️ Important:</strong> This tool provides general guidance only and does not constitute legal advice. 
-                Always consult with a qualified attorney for advice specific to your situation.
-            </div>
-        </div> -->
     </div>
+
+   
+</body>
+</html>

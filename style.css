@@ -12,9 +12,83 @@
             background: linear-gradient(135deg, #bea1d6 0%, #010c1d 100%);
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            z-index: 1000;
+            padding: 15px 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            background-color: transparent;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .nav-brand img {
+            display: block;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-family: 'Outfit', sans-serif;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+
+    
+        /* Add margin to body to account for fixed navbar */
+        body {
+            padding-top: 80px;
         }
 
         .container {
@@ -29,32 +103,22 @@
             overflow: hidden;
         }
 
-        /* .container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, #ffffff, #4ecdc4, #45b7d1, #96ceb4);
-        } */
+       
 
         .logo {
             font-size: 3em;
             margin-bottom: 10px;
             background: linear-gradient(135deg, #000208 0%, #000000 100%);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: bold;
             font-family: Outfit;
         }
-        /* .img{
-            width: 500;
-            height: 600;
-        } */
+      
 
         .tagline {
-            color: #666;
+            color: #000000;
             font-size: 1.2em;
             margin-bottom: 40px;
             font-weight: 300;
@@ -67,8 +131,8 @@
 
         .input-label {
             display: block;
-            color: #333;
-            font-size: 1.1em;
+            color: #928181;
+           
             font-weight: 600;
             margin-bottom: 15px;
             text-align: left;
@@ -137,59 +201,7 @@
             border-top: 1px solid #eee;
         }
 
-        .feature {
-            text-align: center;
-            flex: 1;
-            padding: 0 15px;
-        }
-
-        .feature-icon {
-            font-size: 2em;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .feature-text {
-            color: #666;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-
-        .disclaimer {
-            margin-top: 30px;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 10px;
-            border-left: 4px solid #ffc107;
-        }
-
-        .disclaimer-text {
-            color: #666;
-            font-size: 0.85em;
-            line-height: 1.5;
-        }
-
-        .result-section {
-            display: none;
-            margin-top: 30px;
-            padding: 25px;
-            background: #f0f8ff;
-            border-radius: 15px;
-            border: 2px solid #667eea;
-            text-align: left;
-        }
-
-        .result-title {
-            color: #333;
-            font-size: 1.3em;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .result-content {
-            color: #555;
-            line-height: 1.6;
-        }
+        
 
         /* Mobile responsiveness */
         @media (max-width: 768px) {
@@ -213,6 +225,12 @@
 
             .feature {
                 padding: 0;
+            }
+
+           
+
+            body {
+                padding-top: 80px;
             }
         }
 
